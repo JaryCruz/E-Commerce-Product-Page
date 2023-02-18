@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>E-commerce Product</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer async></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <div class="nav-links">
+
+        <button class="btn-hamburger" data-btn-mobile>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    
+        <img src="images/logo.svg" alt="">
+
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="cart-container">
+        <button aria-label="cart" class="btn-cart" data-btn-cart>
+          <small class="hidden" data-count-notify>1</small>
+        </button>
+        <img src="images/image-avatar.png" class="profile-img" alt="">
+        <div class="basket hidden" data-cart>
+          <p class="p-bold">Cart</p>
+          <span class="" data-cart-empty>Your cart is empty.</span>
+          <div class="cart-content hidden" data-cart-content>
+            <div class="item-cart">
+              <img src="images/image-product-1-thumbnail.jpg" alt="">
+              <div>
+                <p>Fall Limited Edition Sneakers</p>
+                <div class="checkout-prices">
+                  <p>$125.00 x</p>
+                  <small data-shoes-count>0</small>
+                  <p class="p-total" data-total> $375.00</p>
+                </div>
+              </div>
+              <button class="btn-trash" data-btn-trash></button>
+            </div>
+            <button class="btn-checkout" data-btn-checkout>Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu hidden" data-mobile-menu>
+    <div class="mobile-content">
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <div class="images-showcase">
+        <div class="slider-container mobile-image">
+          <button class="btn-prev" data-btn-prev></button>
+          <img src="images/image-product-1.jpg" alt="" class="main-picture img-mobile-slider">
+          <img src="images/image-product-2.jpg" alt="" class="main-picture img-mobile-slider">
+          <img src="images/image-product-3.jpg" alt="" class="main-picture img-mobile-slider">
+          <img src="images/image-product-4.jpg" alt="" class="main-picture img-mobile-slider">
+          <button class="btn-next" data-btn-next></button>
+        </div>
+        <button class="desktop-image">
+          <img src="images/image-product-1.jpg" alt="" class="main-picture" data-main-img>
+        </button>
+        <div class="thumbnails">
+          <button data-thumbnail="1"></button>
+          <button data-thumbnail="2"></button>
+          <button data-thumbnail="3"></button>
+          <button data-thumbnail="4"></button>
+        </div>
+      </div>
+
+      <div>
+        <h1>Sneaker Company</h1>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="prices">
+          <div>
+            <span class="price">$125.00</span>
+            <span class="discount">50%</span>
+          </div>
+          <span class="ex-price">$250.00</span>
+        </div>
+        <div class="add-product-buttons">
+          <div class="add-item">
+            <button class="btn-minus" data-btn-minus></button>
+            <span data-item-count>0</span>
+            <button class="btn-plus" data-btn-plus></button>
+          </div>
+          <button class="btn-add-cart" data-btn-add-cart>
+            <img src="images/icon-cart-white.svg" alt="">
+            <span>Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Lightbox Gallery -->
+      <section class="hidden" data-lightbox-gallery>
+        <div class="modal-content">
+          <button class="btn-close" data-btn-close></button> 
+          <div class="slider-container">
+            <button class="btn-prev" data-btn-prev></button>
+            <img src="images/image-product-1.jpg" alt="" class="main-picture img-slider">
+            <img src="images/image-product-2.jpg" alt="" class="main-picture img-slider">
+            <img src="images/image-product-3.jpg" alt="" class="main-picture img-slider">
+            <img src="images/image-product-4.jpg" alt="" class="main-picture img-slider">
+            <button class="btn-next" data-btn-next></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
